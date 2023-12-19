@@ -1,0 +1,4 @@
+1. 通过herb_dictionary.py得到herb_dictionary.json，并删除中草药名称出现次数小于7的中草药，得到herb_dictionary.json(手动删除)
+2. 根据herb_dictionary.json删除原始数据集中的在herb_dictionary.json为出现过的中草药名称（）
+3. 遍历所有的sample中的add_or_sub_list属性中的hert属性下的中草药列表。如果这个列表中经过处理后为空，那就删除这条个体特征，如果最终整个个体特征列表为空，那就删除个体特征这个属性。处理方法：遍历每一个中草药名称，如果中草药名称中含有‘去’‘减’‘裁’等字样并且去掉该字后的中草药名称在herb_list中，那么将这个中草药从herb_list中删除，并判断是否为空，为空删除整条sample；如果中草药名称在herb_dictionary.json中那么就将其加入到herb_list中，形成一条新的case。
+
