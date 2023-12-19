@@ -1,0 +1,25 @@
+# 忽略runs文件夹
+runs/
+
+# 
+bert_kg/TCM/model/__pycache__/
+
+# 忽略ouput文件夹
+output/
+
+# 
+bert_kg/
+
+# 
+data/*.json
+
+#
+data/cached_dev_*
+
+#
+data/cached_train_*
+
+#
+kg-embeddings/*
+
+
